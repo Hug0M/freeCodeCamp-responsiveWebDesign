@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Paaji+2|Open+Sans&display=swap');
+
+/* Estilos generales */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(251, 251, 251);
+    width: 100%;
+}
+
+.little-text{
+    font-size: 14px;
+}
+
+.center-flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos header*/
+
+header{
+    font-family: 'Open Sans', sans-serif;
+    height: 10vh;
+	min-height: 100px; 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos form */
+
+form{
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(167, 225, 248);
+    border-radius: 20px;
+    width: 45%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 3em;
+    border: 2px solid rgb(122, 198, 228);
+}
+
+.form-element{
+    width: 100%;
+    text-align: start;
+    margin: 10px;
+}
+
+input{
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select{
+    margin-top: 5px;
+    font-size: 15px;
+    width: 100%;
+    border: none;
+    padding: 5px;
+    margin-right: 1em;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus{
+    border: 2px solid rgb(122, 198, 228);
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    margin-right: 10px;
+}
+
+textarea{
+    width: 98%;
+    min-height: 70px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+textarea:focus{
+    border: 2px solid rgb(122, 198, 228)
+}
+
+#submit-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    width: 40%;
+    background-color: whitesmoke;    
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    
+}
+
+button:hover,
+button:focus{
+    border: 2px solid rgb(122, 198, 228);
+}

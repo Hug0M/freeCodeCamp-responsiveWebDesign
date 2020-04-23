@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/Lightning.ico" type="image/x-icon">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>ThunderAudio | Bluetooth earbuds</title>
+</head>
+<body>
+
+    <div class="absolute">
+
+        <header id="header">
+    
+            <img src="media/airpods.png" alt="Thunder audio logo" id="header-img">
+    
+            <nav id="nav-bar">
+                <ul id="header-ul">
+                    <li class="nav-li"><a href="#overview" class="nav-link">Overview</a></li>
+                    <li class="nav-li"><a href="#shipping" class="nav-link">Shipping</a></li>
+                    <li class="nav-li"><a href="#tracking" class="nav-link">Tracking</a></li>
+                </ul>
+            </nav>
+    
+    
+        </header>
+    </div>
+
+
+
+        <main>
+
+            <section id="overview">
+                <video src="media/airpods.mp4" autoplay controls id="video" muted></video>
+                
+                <div class="content-wrap">
+                    <div class="overview-content" id="specs">
+                        <h1 id="title">Earbuds Pro</h1>
+                        <ul id="overview-ul">
+                            <li>Active Noise Cancellation</li>
+                            <li>More Customizable Fit and Seal</li>
+                            <li>Transparency Mode</li>
+                            <li>Amazing sound quality with Adaptative EQ</li>
+                            <li>Sweat and water resistant (IPX4)²</li>
+                            <li>Automatically on, automatically connected</li>   
+                            <li>Quick charging in the case</li>
+                        </ul>
+                        <div id="price">
+                            <p>Current Price: 279$</p>
+                            <button id="cart-button" class="button">Add To Cart</button>
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="extra-wrap">
+                        <div id="reviews" class="overview-content">
+                            <h1>Product Opinions</h1>
+                            <p>Rating: 4.7 / 5 <span class="strong">(53 opinions)</span></p>
+                        </div>
+    
+                        <div id="support" class="overview-content">
+                            <h1>Questions</h1>
+                            <p>Do you have any Question?</p>
+                            <p>Email us at: <span class="strong">support@thunder.com</span></p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            
+
+
+            <section id="shipping">
+
+                <div class="shipping-element">
+                    <img src="media/lock.png" alt="Secure" class="shipping-image">
+
+                    <h1>SSL Certified</h1>
+                    <p>Secure web page</p>
+                </div>
+
+                <div class="shipping-element">
+                    <img src="media/dollar.png" alt="Free" class="shipping-image">
+
+                    <h1>Free Shipping</h1>
+                    <p>On any order over 50$</p>
+                </div>
+                    
+                
+                <div class="shipping-element">
+                    <img src="media/truck.png" alt="Fast Shipping" class="shipping-image">
+
+                    <h1>Fast Shipping</h1>
+                    <p>24/48h Express Shipping</p>
+                </div>
+
+
+            </section>
+
+            <div class="flex">
+                <section id="tracking">
+                    <h1 id="tracking-title">Want To Track Your Order?</h1>
+                    <p>Enter your order details below to receive a mail with tracking information</p>
+    
+
+
+                    <form action="POST" id="form">
+
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" required placeholder="Enter your name"><br>
+                            <label for="number">Order Number</label><br>
+                            <input type="number" name="tracking number" id="number" required placeholder="Enter your order number"><br>
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email" id="email" required placeholder="Enter your email"><br>
+                            <input type="submit" value="Submit" class="button" id="submit">
+
+                    </form>
+                </section>
+            </div>
+            
+        </main>
+
+        <footer>
+            <p>Hugo Mateos Manrique - 2020 &copy;</p>
+        </footer>
+</body>
+</html>

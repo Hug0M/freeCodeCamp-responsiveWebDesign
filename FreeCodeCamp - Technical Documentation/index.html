@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FreeCodeCamp | Technical Documentation </title>
+</head>
+<body>
+    <main id="main-doc">
+        
+        <div class="fixed-container">
+            
+            <nav id="navbar">
+                <header>JavaScript Conditionals 101</header>
+            
+                <ul>
+                    <li> <a href="#Comparisons" class="nav-link">Comparisons</a></li>
+                    <li> <a href="#If_Conditionals" class="nav-link">If Conditionals</a></li>
+                    <li> <a href="#Else_Conditionals" class="nav-link">Else Conditionals</a></li>
+                    <li> <a href="#Else_if_Conditionals" class="nav-link">Else if Conditionals</a></li>
+                    <li> <a href="#Switch_Conditionals" class="nav-link">Switch Conditionals</a></li>
+                </ul>
+            </nav>
+        
+        </div>
+
+        <div id="sections">
+            <h1 id="main-title">Javascript Conditionals 101</h1>
+            <section class="main-section" id="Comparisons">
+                <header>Comparisons</header>
+                
+            <p>Comparison and Logical operators are used to test for true or false</p>
+
+            <p class="important">Comparison Operators</p>
+            <p>Comparison operators are used in logical statements to determine equality or difference between variables or values. </p> 
+            <p>Given that x = 5, these are the comparison operators and what they do:</p>
+            <pre>
+                <p><strong>==</strong>   Equal to   <strong>x == 5 is true</strong></p>
+                <p><strong>===</strong>   Equal value and equal type   <strong>x === "5" is false</strong></p>
+                <p><strong>!=</strong>   Not equal   <strong>x != 6 is true</strong></p>
+                <p><strong>!==</strong>   Not equal value or not equal type   <strong>x !== "5" is true</strong></p>
+                <p><strong>></strong>   Greater than   <strong>x > 2 is true</strong></p>
+                <p><strong><</strong>   Less than   <strong>x < 5 is false</strong></p>
+                <p><strong>>=</strong>   Greater than or equal to   <strong>x >= 4 is true</strong></p>
+                <p><strong><=</strong>   Less than or equal to   <strong>x <= 6 is true</strong></p>
+            </pre>
+            
+            
+        
+            <p class="important">Logical Operators</p>
+            <p>Logical operators are used to determine the logic between variables or values.</p>
+            <p>Given that x = 6 and y = 3, the table below explains the logical operators:</p>  
+            
+            <pre>
+                <p><strong>&&</strong>   and operator   <strong>(x < 10 && y > 1) is true</strong></p>
+                <p><strong>||</strong>   or operator   <strong>(x == 5 || y == 5) is false</strong></p>
+                <p><strong>!</strong>   not operator   <strong>!(x == y) is true</strong></p>
+            </pre>
+            
+        </section>
+        <hr>
+        <section class="main-section" id="If_Conditionals">
+            <header>If Conditionals</header>
+
+            <p>Conditionals are used to do different actions depending of different decisions,
+                this type of conditional need to have a parameter passed, if the parameter results true
+                the action will be executed, but if it is false, nothing will happen.
+            </p>
+            
+            <p class="important">The syntax is:</p>
+            <pre>
+                <code>
+                    <span class="purple">if</span> (<span class="red">condition</span>) {
+                        //  block of code to be executed if the condition is true
+                    } 
+                </code>
+            </pre>
+
+            <p class="important">Example:</p>
+            <pre>
+                <code>
+                    <span class="purple">let</span> <span class="red">age</span> <span class="lightblue">=</span> <span class="orange">10</span> ;
+                    
+                    <span class="purple">if</span> (<span class="red">age</span> <span class="lightblue">>=</span> <span class="orange">10</span>){
+                        <span class="yellow">console</span>.<span class="blue">log</span>(<span class="green">"You are 10 years old or older"</span>);
+                    }
+
+                    // As the condition is true the code inside the if will be executed
+                </code>
+            </pre>
+            
+        </section>
+        <hr>
+        <section class="main-section" id="Else_Conditionals">
+            <header>Else Conditionals</header>
+
+            <p>The else conditional is used whith the if conditional to execute code when
+                the condition inside the if is false. By using a if / else structure we 
+                can specify a block of code to execute when the if is true and another for when
+                the if condition is false.
+            </p>
+
+            <p class="important">The syntax is:</p>
+            <pre>
+                <code>
+                    <span class="purple">if</span> (<span class="red">condition</span>) {
+                        //  block of code to be executed if the condition is true
+                    } <span class="purple">else</span>{
+                        //  block of code to be executed if the condition is false
+                    }
+                </code>
+            </pre>
+
+            <p class="important">Example:</p>
+            <pre>
+                <code>
+                    <span class="purple">let</span> <span class="red">age</span> <span class="lightblue">=</span> <span class="orange">9</span>;
+                    
+                    <span class="purple">if</span> (<span class="red">age</span> <span class="lightblue">>=</span> <span class="orange">10</span>){
+                        <span class="yellow">console</span>.<span class="blue">log</span>(<span class="green">"You are 10 years old or older"</span>);
+                    } <span class="purple">else</span> {
+                        <span class="yellow">console</span>.<span class="blue">log</span>(<span class="green">"You are younger than 10 years old"</span>);
+                    }
+
+                    // As the age variable is 9, the condition is false so the 
+                    // Code executed will be the one inside the else conditional 
+                </code>
+            </pre>
+        </section>
+        <hr>
+        <section class="main-section" id="Else_if_Conditionals">
+            <header>Else if Conditionals</header>
+
+            <p>The else if conditional is used to specify a new condition if the first one is false</p>
+
+            <p class="important">The syntax is:</p>
+            <pre>
+                <code>
+                    <span class="purple">if</span> (<span class="red">condition1</span>) {
+                        //  block of code to be executed if condition1 is true
+                    } <span class="purple">else if</span> (<span class="red">condition2</span>) {
+                        //  block of code to be executed if the condition1 is false and condition2 is true
+                    } <span class="purple">else</span> {
+                        //  block of code to be executed if the condition1 is false and condition2 is false
+                    }
+                </code>
+            </pre>
+            
+            <p class="important">Example:</p>
+            <pre>
+                <code>
+                    <span class="purple">let</span> <span class="red">age</span> <span class="lightblue">=</span> <span class="orange">9</span>;
+                    
+                    <span class="purple">if</span> (<span class="red">age</span> <span class="lightblue">>=</span> <span class="orange">10</span>){
+                        <span class="yellow">console</span>.<span class="blue">log</span>(<span class="green">"You are 10 years old or older"</span>);
+                    } <span class="purple">else if</span> (<span class="red">age</span> <span class="lightblue">==</span> <span class="orange">9</span>) {
+                        <span class="yellow">console</span>.<span class="blue">log</span>(<span class="green">"You are 9 years old"</span>)
+                    } <span class="purple">else</span> {
+                        <span class="yellow">console</span>.<span class="blue">log</span>(<span class="green">"You are younger than 10 years old"</span>);
+                    }
+
+                    // As the condition is true for the else if conditional,
+                    // The code inside him will be executed
+                </code>
+            </pre>
+        </section>
+        <hr>
+        <section class="main-section" id="Switch_Conditionals">
+            <header>Switch Conditionals</header>
+
+            <p>The switch statement is used to perform different actions based on different conditions.</p>
+
+            <p class="important">The syntax is:</p>
+            <pre>
+                <code>
+                    <span class="purple">switch</span>(<span class="red">expression</span>) {
+                        <span class="purple">case</span> <span class="red">x</span>:
+                            // code block
+                            <span class="purple">break</span>;
+                        <span class="purple">case</span> <span class="red">y</span>:
+                            // code block
+                            <span class="purple">break</span>;
+                        <span class="purple">default</span>:
+                            // code block
+                    } 
+                </code>
+            </pre>
+            <p class="important">Code Explaination</p>
+            <ul>
+                <li>The switch expression is evaluated once.</li>
+                <li>The value of the expression is compared with the values of each case.</li>
+                <li>If there is a match, the associated block of code is executed.</li>
+                <li>If there is no match, the default code block is executed.</li>
+            </ul>
+
+            <p class="important">Break Keyword</p>
+            <p> When JavaScript reaches a break keyword, it breaks out of the switch block. <br>
+
+                This will stop the execution of inside the block.
+            </p>
+            <p>
+                It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway. <br>
+
+                If you omit the break statement, the next case will be executed even if the evaluation does not match the case.
+            </p>
+            
+            <p class="important">Default Keyword</p>
+            <p>The default keyword specifies the code to run if there is no case match</p>
+
+            <p class="important">Example:</p>
+            <pre>
+                <code>
+                    <span class="purple">let</span> <span class="red">age</span> <span class="lightblue">=</span> <span class="orange">9</span>;
+                    <span class="purple">let</span> <span class="red">text</span>;
+
+                    <span class="purple">switch</span> (<span class="red">age</span>) {
+                        <span class="purple">case</span> <span class="orange">9</span>:
+                            <span class="red">text</span> <span class="lightblue">=</span> <span class="green">"You are 9 years old"</span>;
+                            <span class="purple">break</span>;
+                        <span class="purple">case</span> <span class="orange">10</span>:
+                            <span class="red">text</span> <span class="lightblue">=</span> <span class="green">"You are 10 years old"</span>;
+                            <span class="purple">break</span>;
+                        <span class="purple">default</span>:
+                            <span class="red">text</span> <span class="lightblue">=</span> <span class="green">"You arent 9/10 years old"</span>;
+                    }
+                    
+                    // The case's 9 code will be executed this time
+                </code>
+            </pre>
+
+            <p class="important">Common Code Blocks</p>
+            
+            <p> Sometimes you will want different switch cases to use the same code. <br>
+
+                In this example case 4 and 5 share the same code block, and 0 and 6 share another code block</p>
+
+                
+            <pre>
+                <code>
+                    <span class="purple">let</span> <span class="red">age</span> <span class="lightblue">=</span> <span class="orange">10</span>;
+                    <span class="purple">let</span> <span class="red">text</span>;
+
+                    <span class="purple">switch</span> (<span class="red">age</span>) {
+                        <span class="purple">case</span> <span class="orange">9</span>:
+                        <span class="purple">case</span> <span class="orange">10</span>:
+                            <span class="red">text</span> <span class="lightblue">=</span> <span class="green">"You are 9/10 years old"</span>;
+                            <span class="purple">break</span>;
+                        <span class="purple">case</span> <span class="orange">7</span>:
+                        <span class="purple">case</span> <span class="orange">8</span>:
+                            <span class="red">text</span> <span class="lightblue">=</span> <span class="green">"You are 7/8 years old"</span>;
+                            <span class="purple">break</span>;
+                        <span class="purple">default</span>:
+                            <span class="red">text</span> <span class="lightblue">=</span> <span class="green">"Enter a valid age"</span>;
+                    }
+
+                    // Code inside case 9 / 10 executed
+                </code>
+            </pre>
+            
+            <p class="important">Switching Details</p>
+            <ul>
+                <li>If multiple cases matches a case value, the first case is selected.</li>
+                <li> If no matching cases are found, the program continues to the default label.</li>
+                <li> If no default label is found, the program continues to the statement(s) after the switch.</li>
+            </ul>
+
+            <p class="important">Strict Comparison</p>
+            <p>Switch cases use strict comparison (===). <br>
+
+                The values must be of the same type to match. <br>
+                
+                A strict comparison can only be true if the operands are of the same type.</p>
+                
+            <pre>
+                <code>
+                    <span class="purple">let</span> <span class="red">age</span> <span class="lightblue">=</span> <span class="green">"9"</span>;
+                    <span class="purple">let</span> <span class="red">text</span>;
+                    
+                    <span class="purple">switch</span> (<span class="red">x</span>) {
+                        <span class="purple">case</span> <span class="orange">9</span>:
+                            <span class="red">text</span> <span class="lightblue">=</span> <span class="green">"You are 9 years old"</span>;
+                            <span class="purple">break</span>;
+                        <span class="purple">case</span> <span class="orange">10</span>:
+                            <span class="red">text</span> <span class="lightblue">=</span> <span class="green">"You are 10 years old"</span>;
+                            <span class="purple">break</span>;
+                        <span class="purple">default</span>:
+                            <span class="red">text</span> <span class="lightblue">=</span> <span class="green">"Not a valid age"</span>;
+                    }
+                
+                    // As the type of age is a string and the type of every case is a int,
+                    // no one will match the age so the default code will be executed.
+                </code>
+            </pre>
+        </section>
+    </div>
+    </main>
+</body>
+</html>

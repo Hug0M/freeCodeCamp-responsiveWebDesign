@@ -1,0 +1,187 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina+2|Fira+Mono:500|Roboto:500&display=swap');
+
+/* Estilos generales */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.fixed-container{
+    position: fixed;
+    height: 100vh;
+    width: 15vw;
+}
+
+/* Estilos main */
+
+#main-doc{
+    max-width: 100vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos nav */
+
+#navbar{
+    width: 100%;
+    height: 100%;
+    padding: 1.2em;
+    text-align: center;
+    background-color: #333842;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+#navbar header{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+    line-height: 2em;
+    color: white;
+    height: 15%;
+}
+
+#navbar ul{
+    font-family: 'Baloo Bhaina 2', cursive;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 70%;
+}
+
+#navbar > ul > li{
+    border-bottom: 1px solid white;
+    padding: 1.2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar > ul > li:first-child{
+    border-top: 1px solid white;
+}
+
+#navbar ul > li > a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos sections */
+
+#main-title{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 2.4em;
+    margin-bottom: 2em;
+}
+
+#sections{
+    padding: 2em;
+    background-color: #282C34;
+    color: #ABB2BF;
+}
+
+.main-section{
+    text-align: left;
+    padding: 2em;
+    margin-left: 17vw;
+}
+
+.main-section header{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+    padding-bottom: 1.4em;
+}
+
+.main-section p{
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.main-section ul{
+    margin-left: 1.4em;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+p.important{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.1em;
+    padding-bottom: 1.4em;
+    padding-top: 1.4em;
+}
+
+strong{
+    color: whitesmoke;
+}
+
+/* Estilos code */
+
+pre{
+    background-color: #21252B;
+    border-radius: 15px;
+    padding: 1.4em;
+}
+
+code{
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.9em;
+}
+
+.purple{
+    color: #C678DD;
+}
+
+.red{
+    color: #E06C75;
+}
+
+.lightblue{
+    color: #4393A7;
+}
+
+.orange{
+    color: #D19A66;
+}
+
+.blue{
+    color: #61AFEF;
+}
+
+.yellow{
+    color: #E5C07B;
+}
+
+.green{
+    color: #98C379;
+}   
+
+/* Media Querys*/ 
+
+@media(max-width: 1265px){
+    .fixed-container{
+        display: none;
+    }
+
+    #main-title{
+        display:block;
+    }
+
+    .main-section{
+        margin-left: 10px;
+        padding-left; 10px;
+    }
+
+    #sections{
+        padding-left: 1em;
+    }
+}
