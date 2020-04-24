@@ -1,0 +1,89 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    min-height: 100px;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 0.3em;
+}
+
+#title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+}
+
+header p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+/* IMAGES */
+
+#img-div{
+    display: flex;
+    margin-top: 2em;
+    justify-content: space-around;
+}
+
+.container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    font-family: 'Lato', sans-serif;
+}
+
+figcaption{
+    margin-top: 1em;
+}
+
+img{
+    width: 60%;
+    max-width: 60%;
+}
+
+/* CONTENT */
+
+#tribute-info{
+    background-color: rgb(15, 15, 15);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding: 2em;
+}
+
+#tribute-info p{
+    margin-bottom: 1em;
+    font-size: 16px;
+}
+
+#info{
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#info a{
+    text-decoration: underline;
+    color: whitesmoke;
+    font-weight: bold;
+
+}
